@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <style>
+        .example {
+            background: rgba(0, 0, 0, .1);
+            border: 2px solid rgba(0, 0, 0, .5);
+            padding: 15px;
+            border-radius: .75rem;
+        }
+
+        .example+h2 {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Puzzlestrap Demo</h1>
+        <hr>
+
+        <h2>Text</h2>
+        <div class="example" id="text">
+            <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+        </div>
+
+        <h2>Table</h2>
+        <div class="example" id="table">
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
+
+        <h2>Forms</h2>
+        <div class="example" id="form">
+            <form class="form-floating">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="text-field-example" value=""
+                        placeholder="Deepest Darkest Secret">
+                    <label for="text-field-example">What's your deepest, darkest secret?</label>
+                    <div id="emailHelp" class="form-text">Don't worry, we won't tell anyone.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+
+        <h2>Accordions</h2>
+        <div class="example" id="accordion">
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Text
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Text Text
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2>Alerts</h2>
+        <div class="example" id="alert">
+            <div class="alert alert-primary" role="alert">
+                A simple primary alert—check it out!
+            </div>
+            <div class="alert alert-secondary" role="alert">
+                A simple secondary alert—check it out!
+            </div>
+            <div class="alert alert-success" role="alert">
+                A simple success alert—check it out!
+            </div>
+            <div class="alert alert-danger" role="alert">
+                A simple danger alert—check it out!
+            </div>
+            <div class="alert alert-warning" role="alert">
+                A simple warning alert—check it out!
+            </div>
+        </div>
+
+        <h2>Buttons</h2>
+        <div class="example" id="button">
+            <a class="btn btn-primary" href="#" role="button">Link</a>
+            <button class="btn btn-primary" type="submit">Button</button>
+            <a class="btn btn-success" href="#" role="button">Link</a>
+            <a class="btn btn-danger" href="#" role="button">Link</a>
+            <a class="btn btn-warning" href="#" role="button">Link</a>
+            <div class="md-1">
+                <button type="button" class="btn btn-primary" data-bs-toggle="button">Toggle button</button>
+                <button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Active
+                    toggle button</button>
+                <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Disabled toggle
+                    button</button>
+            </div>
+        </div>
+
+        <h2>Cards</h2>
+        <div class="example" id="card">
+            <div class="card" style="width: 18rem;">
+                <img src="https://i.postimg.cc/DzFWSwK9/Mega-Puzzle-2024-Work-in-Progress-Interactive-map.png"
+                    class="card-img-top" alt="A map of Mega Puzzle">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#card" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+        <h2>Modals</h2>
+        <div class="example" id="modal">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Navigation Bar</h2>
+        <div class="example" id="nav">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <h2>Offcanvas</h2>
+        <div class="example">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both
+                scrolling & backdrop</button>
+
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <p>Try scrolling the rest of the page to see this option in action.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Progress</h2>
+        <div class="example" id="progress">
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0"
+                aria-valuemax="100">
+                <div class="progress-bar" style="width: 75%"></div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 25%">25%</div>
+            </div>
+        </div>
+
+        <h2>Spinner</h2>
+        <div class="example" id="spinner">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <button class="btn btn-primary" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                <span role="status">Loading...</span>
+            </button>
+        </div>
+
+        <h2>Toast</h2>
+        <div class="example" id="toast">
+            <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <img src="..." class="rounded me-2" alt="...">
+                        <strong class="me-auto">Bootstrap</strong>
+                        <small>11 mins ago</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        Hello, world! This is a toast message.
+                    </div>
+                </div>
+            </div>
+            <script>
+                const toastTrigger = document.getElementById('liveToastBtn')
+                const toastLiveExample = document.getElementById('liveToast')
+
+                if (toastTrigger) {
+                    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+                    toastTrigger.addEventListener('click', () => {
+                        toastBootstrap.show()
+                    })
+                }
+            </script>
+        </div>
+
+        <h2>Tooltip</h2>
+        <div class="example" id="tooltip">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+                Tooltip with HTML
+            </button>
+            <a href="#" class="d-inline-block" data-bs-toggle="tooltip" data-bs-title="Default tooltip">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100">
+                <rect width="100%" height="100%" fill="#563d7c"></rect>
+                <circle cx="50" cy="50" r="30" fill="#007bff"></circle>
+            </svg>
+            </a>
+        </div>
+
+
+
+    </main>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
