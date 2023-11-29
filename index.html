@@ -26,6 +26,68 @@
         <h1>Puzzlestrap Demo</h1>
         <hr>
 
+        <h2>Navigation Bar</h2>
+        <div class="example" id="nav">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-collapse" id="collapseNavbar">
+                        <ul class="navbar-nav">
+                            <button class="btn" type="button"><i class="ppi-map"></i><small>Map</small></button>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <a href="#">
+                                <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap" width="30" height="24">
+                            </a>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <button class="btn" type="button"><i class="ppi-volume"></i><small>Music</small></button>
+                            <button class="btn" type="button"><i class="ppi-magic-book"></i><small>Lore</small></button>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <h2>Alerts</h2>
+        <div class="example" id="alert">
+            <div class="alert alert-primary" role="alert">
+                A simple primary alert—check it out!
+            </div>
+            <div class="alert alert-success" role="alert">
+                A simple success alert—check it out!
+            </div>
+            <div class="alert alert-danger" role="alert">
+                A simple danger alert—check it out!
+            </div>
+            <div class="alert alert-warning" role="alert">
+                A simple warning alert—check it out!
+            </div>
+        </div>
+
+        <h2>Buttons</h2>
+        <div class="example" id="button">
+            <a class="btn btn-primary" href="#" role="button">Default</a>
+            <a href="#" class="btn btn-secondary">Secondary</a>
+            <br>
+            <a class="btn btn-aavikk" href="#" role="button">Aavikk</a>
+            <a class="btn btn-ithkiya" href="#" role="button">Ithkiya</a>
+            <a class="btn btn-zanyph" href="#" role="button">Zanyph</a>
+            <a class="btn btn-etwixt" href="#" role="button">Et'wixt</a>
+            <a class="btn btn-telius" href="#" role="button">Telius</a>
+            <br>
+            <a class="btn btn-success" href="#" role="button">Link</a>
+            <a class="btn btn-danger" href="#" role="button">Link</a>
+            <a class="btn btn-warning" href="#" role="button">Link</a>
+            <div class="md-1">
+                <button type="button" class="btn btn-primary" data-bs-toggle="button">Toggle button</button>
+                <button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Active
+                    toggle button</button>
+                <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Disabled toggle
+                    button</button>
+            </div>
+        </div>
+
+
         <h2>Text</h2>
         <div class="example" id="text">
             <p>You can use the mark tag to <mark>highlight</mark> text.</p>
@@ -113,41 +175,6 @@
 
         </div>
 
-        <h2>Alerts</h2>
-        <div class="example" id="alert">
-            <div class="alert alert-primary" role="alert">
-                A simple primary alert—check it out!
-            </div>
-            <div class="alert alert-secondary" role="alert">
-                A simple secondary alert—check it out!
-            </div>
-            <div class="alert alert-success" role="alert">
-                A simple success alert—check it out!
-            </div>
-            <div class="alert alert-danger" role="alert">
-                A simple danger alert—check it out!
-            </div>
-            <div class="alert alert-warning" role="alert">
-                A simple warning alert—check it out!
-            </div>
-        </div>
-
-        <h2>Buttons</h2>
-        <div class="example" id="button">
-            <a class="btn btn-primary" href="#" role="button">Link</a>
-            <button class="btn btn-primary" type="submit">Button</button>
-            <a class="btn btn-success" href="#" role="button">Link</a>
-            <a class="btn btn-danger" href="#" role="button">Link</a>
-            <a class="btn btn-warning" href="#" role="button">Link</a>
-            <div class="md-1">
-                <button type="button" class="btn btn-primary" data-bs-toggle="button">Toggle button</button>
-                <button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Active
-                    toggle button</button>
-                <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Disabled toggle
-                    button</button>
-            </div>
-        </div>
-
         <h2>Cards</h2>
         <div class="example" id="card">
             <div class="card" style="width: 18rem;">
@@ -190,38 +217,15 @@
             </div>
         </div>
 
-        <h2>Navigation Bar</h2>
-        <div class="example" id="nav">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            <a class="nav-link" href="#">Features</a>
-                            <a class="nav-link" href="#">Pricing</a>
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
         <h2>Offcanvas</h2>
         <div class="example">
             <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both
-                scrolling & backdrop</button>
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Open Offcanvas View</button>
 
             <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
                 aria-labelledby="offcanvasWithBothOptionsLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Lore</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -244,11 +248,11 @@
 
         <h2>Spinner</h2>
         <div class="example" id="spinner">
-            <div class="spinner-border" role="status">
+            <div class="spinner-grow" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
             <button class="btn btn-primary" type="button" disabled>
-                <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                <span class="spinner-grow" aria-hidden="true"></span>
                 <span role="status">Loading...</span>
             </button>
         </div>
@@ -260,13 +264,16 @@
             <div class="toast-container position-fixed bottom-0 end-0 p-3">
                 <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                     <div class="toast-header">
-                        <img src="..." class="rounded me-2" alt="...">
-                        <strong class="me-auto">Bootstrap</strong>
-                        <small>11 mins ago</small>
+                        <img src="" class="rounded me-2" alt="...">
+                        <strong class="me-auto">
+                            <!-- Grandma Edna -->
+                            Ithkiya Central Council
+                        </strong>
                         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
                     </div>
                     <div class="toast-body">
-                        Hello, world! This is a toast message.
+                        <!-- Did you do the dishes, dearie? -->
+                        Kimaya Riverway temorarily closed for Shavim Water Festival. Please use an alternate route.
                     </div>
                 </div>
             </div>
