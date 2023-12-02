@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-region="ithkiya">
 
 <head>
     <meta charset="UTF-8">
@@ -41,7 +41,8 @@
                         </ul>
                         <ul class="navbar-nav">
                             <button class="btn" type="button"><i class="ppi-volume"></i><small>Music</small></button>
-                            <button class="btn" type="button"><i class="ppi-magic-book"></i><small>Lore</small></button>
+                            <button class="btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions"><i class="ppi-magic-book"></i><small>Lore</small></button>
                         </ul>
                     </div>
                 </div>
@@ -69,11 +70,11 @@
             <a class="btn btn-primary" href="#" role="button">Default</a>
             <a href="#" class="btn btn-secondary">Secondary</a>
             <br>
-            <a class="btn btn-aavikk" href="#" role="button">Aavikk</a>
-            <a class="btn btn-ithkiya" href="#" role="button">Ithkiya</a>
-            <a class="btn btn-zanyph" href="#" role="button">Zanyph</a>
-            <a class="btn btn-etwixt" href="#" role="button">Et'wixt</a>
-            <a class="btn btn-telius" href="#" role="button">Telius</a>
+            <a class="btn btn-primary" href="#" role="button">Aavikk</a>
+            <a class="btn" href="#" role="button">Ithkiya</a>
+            <a class="btn" href="#" role="button">Zanyph</a>
+            <a class="btn" href="#" role="button">Et'wixt</a>
+            <a class="btn" href="#" role="button">Telius</a>
             <br>
             <a class="btn btn-success" href="#" role="button">Link</a>
             <a class="btn btn-danger" href="#" role="button">Link</a>
@@ -124,20 +125,6 @@
                   </tr>
                 </tbody>
               </table>
-        </div>
-
-
-        <h2>Forms</h2>
-        <div class="example" id="form">
-            <form class="form-floating">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="text-field-example" value=""
-                        placeholder="Deepest Darkest Secret">
-                    <label for="text-field-example">What's your deepest, darkest secret?</label>
-                    <div id="emailHelp" class="form-text">Don't worry, we won't tell anyone.</div>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
         </div>
 
 
@@ -201,17 +188,29 @@
                 aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
+                        <form class="form-floating needs-validation" novalidate>
                         <div class="modal-header">
                             <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            ...
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="text-field-example" value=""
+                                        placeholder="Deepest Darkest Secret" required>
+                                    <label for="text-field-example">What's your deepest, darkest secret?</label>
+                                    <div class="valid-feedback">
+                                        Great job! That's right :)
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Not quite...
+                                      </div>
+                                </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="submit" class="btn btn-primary">Check Answer</button>
                         </div>
+                    </form>
                     </div>
                 </div>
             </div>
@@ -251,7 +250,7 @@
             <div class="spinner-grow" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
-            <button class="btn btn-primary" type="button" disabled>
+            <button class="btn btn-primary" type="button">
                 <span class="spinner-grow" aria-hidden="true"></span>
                 <span role="status">Loading...</span>
             </button>
