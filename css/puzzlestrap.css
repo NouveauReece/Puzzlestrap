@@ -4021,7 +4021,7 @@ html[data-region=telius] .btn::after, html[data-region=telius] .btn-primary::aft
   --bs-btn-border-radius: var(--bs-border-radius-sm);
 }
 
-.navbar-nav>.btn {
+.navbar-nav>li>.btn {
   display: flex;
   font-family: 'Inter',sans-serif;
   width: 60px;
@@ -4035,22 +4035,22 @@ html[data-region=telius] .btn::after, html[data-region=telius] .btn-primary::aft
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-nav>.btn::before {
+.navbar-nav>li>.btn::before {
   content: ""!important;
 }
 
-.navbar-nav>.btn::after {
+.navbar-nav>li>.btn::after {
   content: ""!important;
 }
 
-.navbar-nav>.btn:hover {
+.navbar-nav>li>.btn:hover {
   background: rgba(255, 255, 255, .7);
   color: black;
   border: none;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.navbar-nav>.btn>i {
+.navbar-nav>li>.btn>i {
   font-size: 200%;
   width: 100%;
   vertical-align: middle;
@@ -4058,7 +4058,7 @@ html[data-region=telius] .btn::after, html[data-region=telius] .btn-primary::aft
   margin-bottom: -10px;
 }
 
-.navbar-nav>.btn>small {
+.navbar-nav>li>.btn>small {
   width: 100%;
   font-weight: bold;
   font-variant-caps: all-small-caps;
