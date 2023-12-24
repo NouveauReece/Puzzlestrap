@@ -7573,7 +7573,7 @@ nav::after {
   --bs-offcanvas-padding-y: 1rem;
   --bs-offcanvas-color: var(--bs-body-color);
   --bs-offcanvas-bg: #F0DAB4;
-  box-shadow: inset 0 0 30px 5px rgba(178,116,10,0.50);
+  box-shadow: inset 0 0 30px 5px rgba(178, 116, 10, 0.502);
   --bs-offcanvas-border-width: var(--bs-border-width);
   --bs-offcanvas-border-color: var(--bs-border-color-translucent);
   --bs-offcanvas-box-shadow: var(--bs-box-shadow-sm);
