@@ -9,6 +9,17 @@
 
  /* font-family: 'Macondo Swash Caps', serif; */
 
+ .sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+ }
+
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -221,6 +232,10 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+main {
+  padding: 30px 0 0 0;
 }
 
 hr {
@@ -6948,6 +6963,13 @@ nav::after {
   .modal-fullscreen-xxl-down .modal-body {
     overflow-y: auto;
   }
+}
+
+#main-menu {
+  display: flex;
+  align-items: center;
+  margin-top: calc(100% - 200px);
+  min-height: calc(100% - var(--bs-modal-margin) * 2);
 }
 
 .tooltip {
