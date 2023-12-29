@@ -6966,10 +6966,7 @@ nav::after {
 }
 
 #main-menu {
-  display: flex;
-  align-items: center;
-  margin-top: calc(100% - 200px);
-  min-height: calc(100% - var(--bs-modal-margin) * 2);
+  
 }
 
 .tooltip {
