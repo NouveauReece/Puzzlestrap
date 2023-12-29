@@ -6965,8 +6965,26 @@ nav::after {
   }
 }
 
-#main-menu {
-  
+#main-menu  {
+  margin: 0;
+}
+
+#main-menu .modal-dialog {
+  justify-content: center;
+}
+
+#main-menu .modal-content {
+  max-width: 80vw;
+}
+
+#main-menu .modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-menu .controls {
+  margin-top: 1em;
 }
 
 .tooltip {
