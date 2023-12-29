@@ -22,6 +22,7 @@
 </head>
 
 <body>
+
     <main class="container">
         <h1>Puzzlestrap Demo</h1>
         <hr>
@@ -43,31 +44,52 @@
                     <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
                 </svg>
             </button>
-            <nav class="navbar">
+            <!-- <nav class="navbar">
                 <div class="container-fluid">
                     <div class="navbar-collapse" id="collapseNavbar">
-                        <ul class="navbar-nav">
-                            <li>
-                                <button class="btn" type="button"><i class="ppi-map"></i><small>Map</small></button>
+                        <div class="navbar-nav">
+                            <button class="btn" type="button">
+                                <i class="ppi-map"></i>
+                                <small>Map</small>
+                            </button>
+                        </div>
+                        <div class="navbar-nav">
+                            <a href="#">
+                                <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap" width="30" height="24">
                             </li>
-                        </ul>
-                        <ul class="navbar-nav">
-                            <li>
-                                <a href="#">
-                                    <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap" width="30" height="24">
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="navbar-nav">
-                            <li>
-                                <button class="btn" type="button"><i class="ppi-volume"></i><small>Music</small></button>
-                            </li>
-                            <li>
-                                <button class="btn" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasWithBothOptions"><i class="ppi-magic-book"></i><small>Lore</small></button>
-                            </li>
-                        </ul>
+                        </div>
+                    <div class="navbar-nav" >
+                            <button class="btn" type="button">
+                                <i class="ppi-volume"></i>
+                                <small>Music</small>
+                            </button>
+                            <button class="btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasWithBothOptions">
+                                <i class="ppi-magic-book"></i>
+                                <small>Lore</small>
+                            </button>
+                        </div>
                     </div>
+                </div>
+            </nav> -->
+
+            <nav class="navbar navbar-nav">
+                <a class="btn" href="./index.html">
+                    <svg width="10px"><use href="icons.svg#ppi-map" xlink:href="icons.svg#ppi-map"></svg>    
+                    Map
+                </a>
+                <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap" width="30" height="24">
+                <div class="navbar-nav">
+                    <a class="btn" href="">
+                        <svg><use href="icons.svg#ppi-unmuted" xlink:href="icons.svg#ppi-unmuted"></svg>    
+                        Music</a>
+                    <button class="btn" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions">
+                        <svg>
+                            <use href="icons.svg#ppi-lore" xlink:href="icons.svg#ppi-lore"></use>
+                        </svg>    
+                            Lore
+                        </button>
                 </div>
             </nav>
         </div>
@@ -390,15 +412,14 @@
                         <div class="card mb-3 now-playing" style="max-width: 540px;">
                             <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
                             <div class="row g-0">
-                              <div class="col-md-4">
+                              <div class="col">
                                 <img src="rsrc/wave.gif" class="img-fluid rounded-start" alt="...">
                               </div>
-                              <div class="col-md-8">
+                              <div class="col">
                                 <div class="card-body">
                                   <h1 class="card-text"><small class="text-body-secondary">Now Playing</small></h1>
                                   <p class="card-title">Visions of Gideon</p>
                                   <p class="card-text">Sufjan Stevens</p>
-                                  
                                 </div>
                               </div>
                             </div>
@@ -450,10 +471,12 @@
                 <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
 
                 <!-- Toast message itself -->
+                <!-- By default, Mega Puzzle toasts will not be announced to screen reader users due to ` aria-live="off" `. This is to help minimise clutter. You may consider using ` aria-live="polite" ` if there's a particularly important alert.-->
                 <div class="toast-container position-fixed bottom-0 end-0 p-3">
-                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div id="liveToast" class="toast" role="alert" aria-live="off" aria-atomic="true">
                         <div class="toast-header">
-                            <img src="" class="rounded me-2" alt="...">
+                            <!-- <img src="" class="rounded me-2" alt="..."> -->
+                            <i class="ppi-person"></i>
                             <strong class="me-auto">
                                 <!-- Grandma Edna -->
                                 Ithkiya Central Council
