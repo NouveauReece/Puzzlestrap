@@ -6987,6 +6987,19 @@ nav::after {
   margin-top: 1em;
 }
 
+.back-to-menu {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: auto;
+  z-index: 10;
+}
+
+.back-to-menu svg {
+  height: 15px;
+  width: 15px;
+}
+
 .tooltip {
   --bs-tooltip-zindex: 1080;
   --bs-tooltip-max-width: 200px;
