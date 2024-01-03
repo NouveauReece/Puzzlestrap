@@ -3276,6 +3276,10 @@ textarea.form-control-lg {
   display: block;
 }
 
+#correct, #incorrect, #technical-error {
+  display: none;
+}
+
 .was-validated .form-control:valid,
 .form-control.is-valid {
   border-color: var(--bs-form-valid-border-color);
@@ -4046,7 +4050,22 @@ html[data-region=telius] .btn::after, html[data-region=telius] .btn-primary::aft
   --bs-btn-disabled-border-color: transparent;
   --bs-btn-box-shadow: 0 0 0 #000;
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  text-align: left;
   text-decoration: underline;
+  box-shadow: none;
+}
+
+.btn-link::before {
+  display: none;
+}
+
+.btn-link::after {
+  display: none;
+}
+
+.signout {
+  padding: 0px;
+  margin-bottom: 3px;
 }
 
 .btn-link:focus-visible {
@@ -4823,6 +4842,11 @@ nav::after {
   height: 50px;
   width: 100%;
   margin-top: 15px;
+}
+
+nav svg {
+  width: 10px;
+  height: 30px;
 }
 
 .navbar>.container,
