@@ -9072,6 +9072,26 @@ nav svg {
   overflow-y: scroll !important;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #DFC382;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #B99B5A;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #A38954;
+}
+
 .d-inline {
   display: inline !important;
 }
