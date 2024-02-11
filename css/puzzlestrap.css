@@ -3515,6 +3515,7 @@ textarea.form-control.is-invalid {
 
 
 
+
 @media (prefers-reduced-motion: reduce) {
   .btn {
     transition: none;
@@ -4190,6 +4191,7 @@ html[data-region=telius] .btn-primary::after {
 }
 
 .btn-link {
+  display: inline-block;
   --bs-btn-font-weight: 400;
   --bs-btn-color: var(--bs-link-color);
   --bs-btn-bg: transparent;
