@@ -3656,6 +3656,12 @@ html[data-region=aavikk] .btn-primary::before {
   margin-right: -3px
 }
 
+.text-container p:first-of-type::first-letter {
+  font-family: 'Macondo Swash Caps', serif;
+  font-size: 2.5em;
+  margin-right: -3px
+}
+
 html[data-region=aavikk] .text-container::before {
   position: absolute;
   left: 0;
